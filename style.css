@@ -13,10 +13,6 @@
     font-size: small;
 }
 
-.collapse {
-    z-index: -2;
-}
-
 #button:hover {
     background-color: #5f6517;
 }
@@ -123,7 +119,7 @@ header {
         line-height: 0%;
     }
 
-   
+
 }
 
 /* @media (min-width: 375px) {
@@ -169,12 +165,31 @@ header {
 
 .card-img-top {
     transition: all 0.3s ease-in-out;
-  }
-  
-  .card:hover .card-img-top {
+}
+
+.card:hover .card-img-top {
     transform: scale(1.3);
-  }
-  
+}
+
+@media(max-width: 768px){
+    .card-div {
+        width: 10rem;
+        height: 9rem;
+    }
+
+    .card-div b{
+        margin-bottom: 10%;
+        font-size: 60%;
+        line-height: 0%;
+    }
+
+    .card-img-top {
+        height: 50%;
+        width: 50%;
+    }
+    
+}
+
 .passage {
     display: flex;
     justify-content: center;
@@ -195,10 +210,17 @@ header {
     text-align: center;
 }
 
+@media (max-width: 768px) {
+    .passage span {
+        font-size: 80%;
+        line-height: 120%;
+    }
+}
+
 
 .phone-para {
     display: block;
-    margin-left: 20%;
+    margin-left: 220px;
     font-size: 19px;
     line-height: 27px;
     text-transform: uppercase;
@@ -211,22 +233,23 @@ header {
     margin-top: 80px;
 }
 
-.phone-text-col p .phone-span{
+.phone-text-col p .phone-span {
     display: block;
     font-size: 10px;
     line-height: 19px;
     color: #404142;
     font-weight: 600;
     font-family: "Quicksand";
-    margin-left: 20%;
+    margin-left: 220px;
 }
 
+
 .rec-1 {
-    margin-left: 39%;
+    margin-left: 220px;
 }
 
 .rec-2 {
-    margin-left: 25%;
+    margin-left: 120px;
 }
 
 .rec-text-col p .rec-text {
@@ -237,7 +260,7 @@ header {
     font-weight: 700;
     font-family: "Quicksand";
     display: block;
-    margin-left: 39%;
+    margin-left: 220px;
 }
 
 .rec-text-col p .rec-text-1 {
@@ -248,5 +271,31 @@ header {
     font-weight: 700;
     font-family: "Quicksand";
     display: block;
-    margin-left: 25%;
+    margin-left: 120px;
+}
+
+@media (max-width: 768px){
+    .phone-para{
+        margin-left: 30%;
+    }
+
+    .phone-text-col p .phone-span{
+        margin-left: 20%;
+    }
+
+    .rec-1 {
+        margin-left: 40%;
+    }
+    
+    .rec-2 {
+        margin-left: 30%;
+    }
+
+    .rec-text-col p .rec-text{
+        margin-left: 40%;
+    }
+
+    .rec-text-col p .rec-text-1{
+        margin-left: 30%;
+    }
 }
