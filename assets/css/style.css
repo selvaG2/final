@@ -1,0 +1,71 @@
+/* header */
+.header {
+    background-image: url('/assets/images/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    /* Adjust this to your desired height */
+}
+
+/* nav bar  */
+.navbar-nav li.nav-item a.nav-link {
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar-nav li.nav-item a.nav-link:hover {
+    color: #aab33c;
+}
+
+.navbar-light .navbar-nav button.nav-link {
+    border-radius: 2px;
+    border: none;
+    color: #ffffff;
+    background-color: #aab33c;
+}
+
+.navbar-light .navbar-nav button.nav-link:hover {
+    background-color: #899d2b;
+}
+
+/* page 1 text */
+.quotes .quote-text {
+    font-size: 50px;
+    line-height: 25px;
+    color: #aab33c;
+    font-family: 'Dancing Script', cursive;
+    padding-top: 200px;
+}
+
+.quotes .quote-subtext {
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    line-height: 10px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 20px;
+    
+}
+/* page 1 button */
+.quotes button{
+    display: block;
+    margin-top: 20px;
+    height: 50px;
+    padding: 10px 20px;
+    background-color: #aab33c;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* add a transition for the hover effect */
+  }
+  
+  .quotes button:hover {
+    background-color: #899d2b;
+    color: black;
+  }
+
+  

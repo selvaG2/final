@@ -1,0 +1,129 @@
+#menu {
+    color: #ffffff;
+    font-size: small;
+}
+
+#menu:hover {
+    color: #a9b33b;
+}
+
+#button {
+    color: #ffffff;
+    background-color: #a9b33b;
+    font-size: small;
+}
+
+#button:hover {
+    background-color: #5f6517;
+}
+
+.navbar-toggler {
+    background-color: #ffffff;
+    font-size: small;
+}
+
+ul li {
+    font-family: "Quicksand";
+    font-size: 16px;
+    line-height: 25px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: 'MyFont';
+    src: url(/assets/font/00819\ Regular.ttf);
+}
+
+header {
+    background-image: url(./assets/images/banner.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.row {
+    --bs-gutter-x: 0rem;
+}
+
+#card-color {
+    background-color: #d9dda9;
+
+}
+
+/* quotes css and media query */
+
+
+.quotes .quote-text {
+    font-size: 50px;
+    line-height: 25px;
+    color: #aab33c;
+    font-family: MyFont;
+    padding-top: 155px;
+
+}
+
+.quotes .quote-subtext {
+    display: block;
+    font-family: "Quicksand";
+    font-size: 20px;
+    line-height: 10px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+/* page-1 button */
+.quotes button {
+    display: block;
+    margin-top: 20px;
+    height: 40px;
+    padding: 10px 12px;
+    background-color: #aab33c;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* add a transition for the hover effect */
+}
+
+.quotes button:hover {
+    background-color: #899d2b;
+    color: rgb(255, 255, 255);
+}
+
+
+/* .quotes .quote-text {
+    display: block;
+    font-family: 'MyFont';
+    font-size: 50px;
+    line-height: 100px;
+    color: #aab33c;
+    margin-top: 30vh;
+
+}
+
+.quotes .quote-subtext {
+    display: block;
+} */
+
+/* @media (min-width: 768px) {
+    .quotes {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 767px) {
+    .quotes {
+        text-align: center;
+        margin-top: 20%;
+    }
+} */
