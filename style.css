@@ -171,13 +171,13 @@ header {
     transform: scale(1.3);
 }
 
-@media(max-width: 768px){
+@media(max-width: 768px) {
     .card-div {
         width: 10rem;
         height: 9rem;
     }
 
-    .card-div b{
+    .card-div b {
         margin-bottom: 10%;
         font-size: 60%;
         line-height: 0%;
@@ -187,7 +187,7 @@ header {
         height: 50%;
         width: 50%;
     }
-    
+
 }
 
 .passage {
@@ -274,28 +274,85 @@ header {
     margin-left: 120px;
 }
 
-@media (max-width: 768px){
-    .phone-para{
+@media (max-width: 768px) {
+    .phone-para {
         margin-left: 30%;
     }
 
-    .phone-text-col p .phone-span{
+    .phone-text-col p .phone-span {
         margin-left: 20%;
     }
 
     .rec-1 {
         margin-left: 40%;
     }
-    
+
     .rec-2 {
         margin-left: 30%;
     }
 
-    .rec-text-col p .rec-text{
+    .rec-text-col p .rec-text {
         margin-left: 40%;
     }
 
-    .rec-text-col p .rec-text-1{
+    .rec-text-col p .rec-text-1 {
         margin-left: 30%;
     }
+}
+
+.layout-4 {
+    background-color: rgba(170, 179, 60, 0.102);
+    width: 100%;
+    height: 620px;
+}
+
+.layout-4 .crop .lay-img{
+    margin-left: 50%;
+    width: 60%;
+    height: 88%;
+}
+
+.crop{
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    margin-left: 98%;
+  }
+
+.layout-4 .lay-text {
+    margin-left: 20%;
+    display: block;
+    font-size: 35px;
+    line-height: 40px;
+    color: #404142;
+    font-weight: 700;
+    font-family: "Quicksand";
+}
+
+.layout-4 .layout-p .layout-p-span {
+    margin-left: 20%;
+    display: block;
+    font-size: 10px;
+    line-height: 5px;
+    color: #404142;
+    font-weight: 500;
+    font-family: "Quicksand";
+    margin-top: 2%;
+}
+
+.layout-4-btn {
+    width: 200px;
+    height: 35px;
+    background-color: #aab33c;
+    border: none;
+    border-radius: 3%;
+    margin-left: 65%;
+    color: #ffffff;
+    font-family: "Quicksand";
+}
+
+.layout-4-btn:hover{
+    background-color: #899d2b;
 }
