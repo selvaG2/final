@@ -59,7 +59,7 @@ header {
     color: #aab33c;
     font-family: MyFont;
     margin-top: 25%;
-    margin-left:38%;
+    margin-left: 38%;
 }
 
 .quotes .quote-subtext {
@@ -229,7 +229,7 @@ header {
 
 .phone-text-col {
     margin-top: 80px;
-    margin-left: -38px;
+    margin-left: -54px;
 }
 
 .phone-text-col p .phone-span {
@@ -274,6 +274,10 @@ header {
 }
 
 @media (max-width: 768px) {
+    img.phone.img.img-fluid {
+        display: none;
+    }
+
     .phone-para {
         margin-left: 30%;
     }
@@ -306,7 +310,7 @@ header {
 }
 
 .layout-4 .crop .lay-img {
-    margin-left: 40%;
+    margin-left: 35%;
     width: 50%;
     height: 90%;
 }
@@ -317,12 +321,12 @@ header {
 
 .overlay {
     position: absolute;
-    bottom: -11px;
-    right: -38px;
+    bottom: -16px;
+    right: 15px;
 }
 
 .layout-4 .lay-text {
-    margin-left: 7%;
+    margin-left: 4%;
     display: block;
     font-size: 35px;
     line-height: 40px;
@@ -332,7 +336,7 @@ header {
 }
 
 .layout-4 .layout-p .layout-p-span {
-    margin-left: 7%;
+    margin-left: 4%;
     display: block;
     font-size: 11px;
     line-height: 5px;
@@ -348,7 +352,7 @@ header {
     background-color: #aab33c;
     border: none;
     border-radius: 3%;
-    margin-left: 45%;
+    margin-left: 37%;
     color: #ffffff;
     font-family: "Quicksand";
 }
@@ -357,7 +361,7 @@ header {
     background-color: #899d2b;
 }
 
-@media(max-width: 768px){
+@media(max-width: 768px) {
     .layout-4 .crop .lay-img {
         margin-left: 40%;
         width: 55%;
@@ -401,4 +405,44 @@ header {
         width: 100%;
         height: 402px;
     }
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: rgba(170, 179, 59, 0.3);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: white;
+}
+
+.table {
+    overflow: hidden;
+    border-radius: 10px;
+    width: 75%;
+    margin-left: 14%;
+}
+
+.table .tbl-head {
+    border: 1px solid rgba(170, 179, 59, 0.3);
+    background-color: #aab33c;
+    color: #ffffff;
+    line-height: 50px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Quicksand";
+}
+
+.table .tbl-width {
+    width: 60%;
+    font-size: 38px;
+    padding-bottom: 3%;
+}
+
+.table .tbl-head span {
+    display: block;
+    font-size: 10px;
+    line-height: 15px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Quicksand";
 }
