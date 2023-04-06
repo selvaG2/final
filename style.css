@@ -303,26 +303,27 @@ header {
 .layout-4 {
     background-color: rgba(170, 179, 60, 0.102);
     width: 100%;
-    height: 620px;
+    height: 550px;
 }
 
-.layout-4 .crop .lay-img{
-    margin-left: 50%;
-    width: 60%;
-    height: 88%;
+.layout-4 .crop .lay-img {
+    margin-left: 35%;
+    width: 50%;
+    height: 90%;
 }
 
-.crop{
+.crop {
     position: relative;
 }
 
 .overlay {
     position: absolute;
-    margin-left: 98%;
-  }
+    bottom: -22px;
+    right: 7px;
+}
 
 .layout-4 .lay-text {
-    margin-left: 20%;
+    margin-left: 0%;
     display: block;
     font-size: 35px;
     line-height: 40px;
@@ -332,9 +333,9 @@ header {
 }
 
 .layout-4 .layout-p .layout-p-span {
-    margin-left: 20%;
+    margin-left: 0%;
     display: block;
-    font-size: 10px;
+    font-size: 11px;
     line-height: 5px;
     color: #404142;
     font-weight: 500;
@@ -348,11 +349,57 @@ header {
     background-color: #aab33c;
     border: none;
     border-radius: 3%;
-    margin-left: 65%;
+    margin-left: 45%;
     color: #ffffff;
     font-family: "Quicksand";
 }
 
-.layout-4-btn:hover{
+.layout-4-btn:hover {
     background-color: #899d2b;
+}
+
+@media(max-width: 768px){
+    .layout-4 .crop .lay-img {
+        margin-left: 40%;
+        width: 55%;
+        height: 75%;
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 56px;
+        right: -37px;
+        width: 27%;
+    }
+
+    .layout-4 .lay-text {
+        margin-left: 14%;
+        display: block;
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    .layout-4 .layout-p .layout-p-span {
+        margin-left: 13%;
+        display: block;
+        font-size: 7px;
+        line-height: 9px;
+        color: #404142;
+        font-weight: 500;
+        font-family: "Quicksand";
+        margin-top: 0%;
+    }
+
+    .layout-4-btn {
+        width: 158px;
+        height: 18px;
+        font-size: 10px;
+        margin-bottom: 85px;
+    }
+
+    .layout-4 {
+        background-color: rgba(170, 179, 60, 0.102);
+        width: 100%;
+        height: 402px;
+    }
 }
