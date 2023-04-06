@@ -53,15 +53,13 @@ header {
 }
 
 /* quotes css and media query */
-
-
 .quotes .quote-text {
     font-size: 50px;
     line-height: 25px;
     color: #aab33c;
     font-family: MyFont;
     margin-top: 25%;
-    margin-left: 50%;
+    margin-left:38%;
 }
 
 .quotes .quote-subtext {
@@ -72,7 +70,7 @@ header {
     color: #ffffff;
     font-weight: 700;
     margin-bottom: 20px;
-    margin-left: 50%;
+    margin-left: 38%;
 
 }
 
@@ -89,7 +87,7 @@ header {
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-left: 50%;
+    margin-left: 38%;
 }
 
 .quotes button:hover {
@@ -231,6 +229,7 @@ header {
 
 .phone-text-col {
     margin-top: 80px;
+    margin-left: -38px;
 }
 
 .phone-text-col p .phone-span {
@@ -307,7 +306,7 @@ header {
 }
 
 .layout-4 .crop .lay-img {
-    margin-left: 35%;
+    margin-left: 40%;
     width: 50%;
     height: 90%;
 }
@@ -318,12 +317,12 @@ header {
 
 .overlay {
     position: absolute;
-    bottom: -22px;
-    right: 7px;
+    bottom: -11px;
+    right: -38px;
 }
 
 .layout-4 .lay-text {
-    margin-left: 0%;
+    margin-left: 7%;
     display: block;
     font-size: 35px;
     line-height: 40px;
@@ -333,7 +332,7 @@ header {
 }
 
 .layout-4 .layout-p .layout-p-span {
-    margin-left: 0%;
+    margin-left: 7%;
     display: block;
     font-size: 11px;
     line-height: 5px;
