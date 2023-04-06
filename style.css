@@ -412,37 +412,128 @@ header {
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 .table {
     overflow: hidden;
     border-radius: 10px;
-    width: 75%;
-    margin-left: 14%;
+    width: 80%;
+    margin-left: 10%;
+    border-collapse: collapse;
 }
 
 .table .tbl-head {
-    border: 1px solid rgba(170, 179, 59, 0.3);
+
     background-color: #aab33c;
-    color: #ffffff;
-    line-height: 50px;
+    line-height: 35px;
     color: #ffffff;
     font-weight: 700;
     font-family: "Quicksand";
 }
 
 .table .tbl-width {
-    width: 60%;
-    font-size: 38px;
-    padding-bottom: 3%;
+    width: 70%;
+    font-size: 35px;
+    padding-bottom: 2%;
 }
 
 .table .tbl-head span {
     display: block;
-    font-size: 10px;
+    font-size: 8px;
     line-height: 15px;
     color: #ffffff;
     font-weight: 500;
     font-family: "Quicksand";
+}
+
+.table td span {
+    display: block;
+    font-size: 9px;
+    line-height: 15px;
+    color: #404142;
+    font-weight: 700;
+    font-family: "Quicksand";
+    
+}
+
+td.span-2 {
+    padding: 10px;
+}
+
+td.span-3 {
+    width: 40%;
+    display: block;
+    font-size: 45px;
+    line-height: 14px;
+    color: #aab33b;
+    font-weight: 700;
+    font-family: "Quicksand";
+    padding: 10px;
+}
+
+span.span-4 {
+    margin-left: 93%;
+}
+
+span.span-5 {
+    margin-left: 87%;
+}
+
+@media(max-width: 768px) {
+    .table {
+        width: 94%;
+        margin-left: 2%;
+    }
+
+    .table .tbl-width {
+        width: 66%;
+        font-size: 28px;
+        padding-bottom: 5%;
+    }
+
+    .table .tbl-head span {
+        font-size: 6px;
+    }
+
+    .table .tbl-head {
+        line-height: 20px;
+    }
+
+    .table td span {
+        display: block;
+        font-size: 7px;
+    }
+
+    img.tbl-img.img-fluid.ms-lg-5.mt-lg-3 {
+        width: 25%;
+        margin-left: 28%;
+        margin-top: 15%;
+    }
+
+    span.span-4 {
+        margin-top: -3%;
+    }
+}
+
+.container-fluid {
+    padding-right: var(--bs-gutter-x, 0rem);
+    padding-left: var(--bs-gutter-x, 0rem);
+}
+
+.text-img {
+    z-index: 1;
+}
+
+.text-img-p {
+    position: absolute;
+    top: 43%;
+    left: 21%;
+    z-index: 2;
+    font-size: 25px;
+    line-height: 46px;
+    color: #404142;
+    font-weight: 700;
+    font-family: "Quicksand";
+    text-align: center;
 }
