@@ -363,7 +363,7 @@ header {
 
 @media(max-width: 768px) {
     .layout-4 .crop .lay-img {
-        margin-left: 40%;
+        margin-left: 26%;
         width: 55%;
         height: 75%;
     }
@@ -371,19 +371,19 @@ header {
     .overlay {
         position: absolute;
         bottom: 56px;
-        right: -37px;
+        right: 21px;
         width: 27%;
     }
 
     .layout-4 .lay-text {
-        margin-left: 14%;
+        margin-left: 0%;
         display: block;
         font-size: 22px;
         line-height: 25px;
     }
 
     .layout-4 .layout-p .layout-p-span {
-        margin-left: 13%;
+        margin-left: 0%;
         display: block;
         font-size: 7px;
         line-height: 9px;
@@ -394,7 +394,7 @@ header {
     }
 
     .layout-4-btn {
-        width: 158px;
+        width: 138px;
         height: 18px;
         font-size: 10px;
         margin-bottom: 85px;
@@ -459,6 +459,7 @@ header {
 
 td.span-2 {
     padding: 10px;
+    height: 85px;
 }
 
 td.span-2 p {
@@ -476,10 +477,25 @@ td.span-2 pre{
     float: right;
     font-size: 12px;
 }
+
+td.span-2.span-space {
+    padding-top: 28px;
+}
+
+td.span-2.span-space-1 {
+    padding-top: 20px;
+}
+
 pre {
     display: block;
     margin-top: -47px;
 }
+
+td.money-span {
+    font-size: 89%;
+    font-weight: 600;
+}
+
 @media(max-width: 768px) {
     .table {
         width: 94%;
@@ -540,6 +556,10 @@ pre {
 
 body{
     overflow-x: hidden;
+}
+
+.link-cont .click{
+    font-size: 10px;
 }
 @media (max-width: 768px) {
     p.text-img-p.position-absolute {
