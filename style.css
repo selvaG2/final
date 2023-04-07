@@ -418,8 +418,8 @@ header {
 .table {
     overflow: hidden;
     border-radius: 10px;
-    width: 80%;
-    margin-left: 10%;
+    width: 72%;
+    margin-left: 15%;
     border-collapse: collapse;
 }
 
@@ -433,9 +433,9 @@ header {
 }
 
 .table .tbl-width {
-    width: 70%;
-    font-size: 35px;
-    padding-bottom: 2%;
+    width: 65%;
+    font-size: 31px;
+    padding-bottom: 3%;
 }
 
 .table .tbl-head span {
@@ -449,7 +449,7 @@ header {
 
 .table td span {
     display: block;
-    font-size: 9px;
+    font-size: 10px;
     line-height: 15px;
     color: #404142;
     font-weight: 700;
@@ -461,10 +461,9 @@ td.span-2 {
     padding: 10px;
 }
 
-td.span-3 {
+td.span-2 p {
     width: 40%;
-    display: block;
-    font-size: 45px;
+    font-size: 25px;
     line-height: 14px;
     color: #aab33b;
     font-weight: 700;
@@ -472,14 +471,15 @@ td.span-3 {
     padding: 10px;
 }
 
-span.span-4 {
-    margin-left: 93%;
+td.span-2 pre{
+    font-family: "Quicksand";
+    float: right;
+    font-size: 12px;
 }
-
-span.span-5 {
-    margin-left: 87%;
+pre {
+    display: block;
+    margin-top: -47px;
 }
-
 @media(max-width: 768px) {
     .table {
         width: 94%;
@@ -516,11 +516,6 @@ span.span-5 {
     }
 }
 
-.container-fluid {
-    padding-right: var(--bs-gutter-x, 0rem);
-    padding-left: var(--bs-gutter-x, 0rem);
-}
-
 .text-img {
     z-index: 1;
 }
@@ -536,4 +531,20 @@ span.span-5 {
     font-weight: 700;
     font-family: "Quicksand";
     text-align: center;
+}
+
+.container-fluid{
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+body{
+    overflow-x: hidden;
+}
+@media (max-width: 768px) {
+    p.text-img-p.position-absolute {
+        font-size: 130%;
+        margin-left: -9%;
+        margin-top: -2%;
+    }
 }
