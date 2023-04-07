@@ -692,6 +692,7 @@ img.card-img.position-relative {
 }
 
 @media (max-width: 768px) {
+
     .button p,
     .button button {
         margin-left: 30%;
@@ -699,10 +700,56 @@ img.card-img.position-relative {
     }
 }
 
-footer{
-    background-image: url('/assets/images/footer.png');
-    height: 343px;
-    background-repeat: no-repeat;
-    background-size: contain;
+footer .foot-1 .head-1 {
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #404142;
+    font-weight: 700;
+    font-family: "Open Sans";
+}
 
+footer .foot-1 .tail-1 {
+    font-size: 71%;
+    line-height: 17px;
+    color: #404142;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+
+.footer-links-1 li {
+    font-size: 70%;
+    font-weight: 400;
+}
+
+li.text-dark.li-txt {
+    line-height: 17px;
+}
+
+.footer-links-2 li {
+    font-size: 73%;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.input-group-text,
+.form-control {
+    width: 28px;
+    height: 25px;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.form-btn {
+    width: 82px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: #aab33c;
+    margin-left: 60%;
+}
+
+.cpyright {
+    width: 1944px;
+    height: 53px;
+    background-color: #aab33c;
 }
