@@ -22,6 +22,8 @@
     font-size: small;
 }
 
+
+
 ul li {
     font-family: "Quicksand";
     font-size: 16px;
@@ -101,40 +103,28 @@ header {
         height: 350px;
     }
 
+    .navbar-collapse{
+        position: absolute;
+        z-index: 1;
+        margin-top: 0px;
+    }
+
     .quotes .quote-text {
         font-size: 200%;
-        margin-top: 18%;
+        margin-top: 15%;
     }
 
     .quotes .quote-subtext {
-        font-size: 77%;
+        font-size: 90%;
         line-height: 0%;
     }
 
     .quotes button {
-        height: 13%;
-        font-size: 50%;
+        height: 15%;
+        font-size: 55%;
         line-height: 0%;
     }
-
-
 }
-
-/* @media (min-width: 375px) {
-    header {
-        height: 200px;
-    }
-
-    .quotes .quote-text{
-        margin-top: 8%;
-        font-size: 120%;
-    }
-
-    .quotes .quote-subtext{
-        font-size: 35%;
-        line-height: 0%;
-    }
-} */
 
 .card-cont a {
     color: #ffffff;
@@ -277,31 +267,12 @@ header {
     img.phone.img.img-fluid {
         display: none;
     }
-
-    .phone-para {
-        margin-left: 30%;
-    }
-
-    .phone-text-col p .phone-span {
-        margin-left: 20%;
-    }
-
-    .rec-1 {
-        margin-left: 40%;
-    }
-
-    .rec-2 {
-        margin-left: 30%;
-    }
-
-    .rec-text-col p .rec-text {
-        margin-left: 40%;
-    }
-
+    
+    .rec-text-col p .rec-text,
     .rec-text-col p .rec-text-1 {
-        margin-left: 30%;
+        font-size: 11px;
     }
-}
+} 
 
 .layout-4 {
     background-color: rgba(170, 179, 60, 0.102);
@@ -361,15 +332,13 @@ header {
     background-color: #899d2b;
 }
 
-@media(max-width: 768px) {
+ @media(max-width: 768px) {
     .layout-4 .crop .lay-img {
         margin-left: 26%;
-        width: 55%;
         height: 75%;
     }
 
     .overlay {
-        position: absolute;
         bottom: 56px;
         right: 21px;
         width: 27%;
@@ -384,12 +353,8 @@ header {
 
     .layout-4 .layout-p .layout-p-span {
         margin-left: 0%;
-        display: block;
         font-size: 7px;
         line-height: 9px;
-        color: #404142;
-        font-weight: 500;
-        font-family: "Quicksand";
         margin-top: 0%;
     }
 
@@ -401,11 +366,9 @@ header {
     }
 
     .layout-4 {
-        background-color: rgba(170, 179, 60, 0.102);
-        width: 100%;
         height: 402px;
     }
-}
+} 
 
 .table-striped tbody tr:nth-of-type(even) {
     background-color: rgba(170, 179, 59, 0.3);
@@ -552,9 +515,9 @@ td.money-span {
 .text-img-p {
     position: absolute;
     top: 43%;
-    left: 25%;
+    left: 20%;
     z-index: 2;
-    font-size: 25px;
+    font-size: 30px;
     line-height: 46px;
     color: #404142;
     font-weight: 700;
@@ -576,12 +539,12 @@ body {
 }
 
 @media (max-width: 768px) {
-    p.text-img-p.position-absolute {
+    p.text-img-p{
         font-size: 130%;
         margin-left: -9%;
         margin-top: -2%;
     }
-}
+} 
 
 .card-card-1 {
     top: 80%;
@@ -700,56 +663,94 @@ img.card-img.position-relative {
     }
 }
 
-footer .foot-1 .head-1 {
+footer {
+    background-image: url('/assets/images/footer.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.font-2 {
+    width: 260px;
+    height: 130px;
     font-size: 14px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: #404142;
-    font-weight: 700;
-    font-family: "Open Sans";
-}
-
-footer .foot-1 .tail-1 {
-    font-size: 71%;
-    line-height: 17px;
+    line-height: 22px;
     color: #404142;
     font-weight: 400;
-    font-family: "Open Sans";
+    font-family: "Quicksand";
 }
 
-.footer-links-1 li {
+.font-3 {
     font-size: 70%;
-    font-weight: 400;
+    color: #404142;
+    font-family: "Quicksand";
 }
 
-li.text-dark.li-txt {
-    line-height: 17px;
+.font-4,
+.font-5 {
+    font-size: 70%;
+    color: #404142;
+    font-weight: 500;
+    font-family: "Quicksand";
 }
 
-.footer-links-2 li {
-    font-size: 73%;
-    font-weight: 400;
-    line-height: 19px;
+.font-bg-4,
+.font-bg-5 {
+    color: black;
+    text-decoration: none;
 }
 
-.input-group-text,
-.form-control {
-    width: 28px;
-    height: 25px;
+.font-bg-4:hover,
+.font-bg-5:hover {
+    color: #848d00;
+}
+
+.but-footer {
+    color: #ffffff;
+    background-color: #acb643;
+    font-size: small;
+    border: none;
+}
+
+.but-footer:hover {
+    background-color: #8b9429;
+}
+
+#fav {
+    color: #a8b336;
+}
+
+#fav-2 {
+    color: white;
+}
+
+#addon-wrapping {
+    background-color: #acb643;
+}
+
+.cpy-right {
     font-size: 12px;
-    padding: 10px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Quicksand";
 }
 
-.form-btn {
-    width: 82px;
-    height: 25px;
-    border-radius: 3px;
-    background-color: #aab33c;
-    margin-left: 60%;
-}
+@media (max-width: 768px) {
+    .foot-abt h6,
+    .foot-get h6,
+    .foot-link h6{
+        font-size: 65%;
+    }
 
-.cpyright {
-    width: 1944px;
-    height: 53px;
-    background-color: #aab33c;
+    .foot-abt p{
+        font-size: 70%;
+    }
+
+    .foot-get p,
+    .foot-link p{
+        font-size: 62%;
+    }
 }
