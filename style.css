@@ -381,6 +381,12 @@ td.money-span {
     font-weight: 700;
     font-family: "Quicksand";
     text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.text-img-p:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
 }
 
 .container-fluid {
@@ -475,6 +481,10 @@ img.card-img.position-relative {
     font-family: "Quicksand";
 }
 
+.button button:hover{
+    background-color: #848d00;
+}
+
 footer {
     background-image: url('/assets/images/footer.png');
     background-repeat: no-repeat;
@@ -563,126 +573,156 @@ footer {
     header {
         height: 350px;
     }
+
     .navbar-collapse {
         position: absolute;
         z-index: 1;
         margin-top: 0px;
     }
+
     .quotes .quote-text {
         font-size: 200%;
         margin-top: 15%;
     }
+
     .quotes .quote-subtext {
         font-size: 90%;
         line-height: 0%;
     }
+
     .quotes button {
         height: 15%;
         font-size: 55%;
         line-height: 0%;
     }
+
     .card-div {
         width: 10rem;
         height: 9rem;
     }
+
     .card-div b {
         margin-bottom: 10%;
         font-size: 60%;
         line-height: 0%;
     }
+
     .card-img-top {
         height: 50%;
         width: 50%;
     }
+
     .passage span {
         font-size: 80%;
         line-height: 120%;
     }
+
     img.phone.img.img-fluid {
         display: none;
     }
+
     .rec-text-col p .rec-text,
     .rec-text-col p .rec-text-1 {
         font-size: 11px;
     }
+
     .layout-4 .crop .lay-img {
         margin-left: 26%;
         height: 75%;
     }
+
     .overlay {
         bottom: 56px;
         right: 21px;
         width: 27%;
     }
+
     .layout-4 .lay-text {
         margin-left: 0%;
         display: block;
         font-size: 22px;
         line-height: 25px;
     }
+
     .layout-4 .layout-p .layout-p-span {
         margin-left: 0%;
         font-size: 7px;
         line-height: 9px;
         margin-top: 0%;
     }
+
     .layout-4-btn {
         width: 138px;
         height: 18px;
         font-size: 10px;
         margin-bottom: 85px;
     }
+
     .layout-4 {
         height: 402px;
     }
+
     .table {
         width: 94%;
         margin-left: 2%;
     }
+
     .table .tbl-width {
         width: 66%;
         font-size: 28px;
         padding-bottom: 5%;
     }
+
     .table .tbl-head span {
         font-size: 6px;
     }
+
     .table .tbl-head {
         line-height: 20px;
     }
+
     .table td span {
         display: block;
         font-size: 7px;
     }
+
     img.tbl-img.img-fluid.ms-lg-5.mt-lg-3 {
         width: 25%;
         margin-left: 28%;
         margin-top: 15%;
     }
+
     span.span-4 {
         margin-top: -3%;
     }
+
     td.span-2 pre {
         font-size: 10px;
     }
+
     td.span-2 p {
         font-size: 22px;
     }
+
     td.money-span {
         font-size: 75%;
         padding: 8px;
     }
+
     p.text-img-p {
         font-size: 130%;
         margin-left: -9%;
         margin-top: -2%;
     }
+
     .card-img-1.col-lg-3 {
         margin-left: -5%;
     }
+
     img.card-img.position-relative {
         width: 110%;
     }
+
     .card-img-2.col-lg-3.col-md-3,
     .card-img-3.col-lg-3.col-md-3 {
         margin-left: 33px;
@@ -768,12 +808,13 @@ footer {
     header {
         height: 190px;
     }
+
     .navbar-collapse {
         position: absolute;
         z-index: 1;
         margin-top: 0px;
     }
-    
+
     #menu {
         color: #ffffff;
         font-size: 35%;
@@ -803,6 +844,27 @@ footer {
         height: 16px;
         width: 27%;
         line-height: 2px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 177px;
+        height: auto;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .lay-img,
+    .overlay,
+    img.phone.img.img-fluid {
+        display: none;
+    }
+
+    .card {
+        max-width: 185px;
+        max-height: 200px;
     }
 
     .passage span {
@@ -844,8 +906,52 @@ footer {
         font-size: 8px;
     }
 
-    
+    .layout-4 .lay-text {
+        margin-left: 10%;
+        display: block;
+        font-size: 150%;
+        margin-bottom: -3%;
+    }
+
+    .col-lg-6.layout-text.mt-5.col-md-6 {
+        margin-left: 10%;
+    }
+
+    .layout-4 .layout-p .layout-p-span {
+        font-size: 8px;
+        margin-left: 10%;
+    }
+
+    .layout-4 {
+        height: 417px;
+    }
+
+    .layout-4-btn {
+        width: 151px;
+        height: 19px;
+        font-size: 70%;
+        margin-left: 28%;
+    }
+
+    .table {
+        width: 85%;
+        margin-left: 9%;
+    }
+
+    td.span-2 pre {
+        display: none;
+    }
+
+    td.span-2 p {
+        font-size: 26px;
+        line-height: 17px;
+    }
+
+    .text-img-p {
+        top: -1%;
+        left: 19%;
+        font-size: 11px;
+    }
 
 
 }
-  
