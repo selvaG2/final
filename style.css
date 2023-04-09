@@ -51,7 +51,6 @@ header {
 
 #card-color {
     background-color: #d9dda9;
-
 }
 
 /* quotes css and media query */
@@ -97,35 +96,6 @@ header {
     color: rgb(255, 255, 255);
 }
 
-
-@media (max-width: 768px) {
-    header {
-        height: 350px;
-    }
-
-    .navbar-collapse{
-        position: absolute;
-        z-index: 1;
-        margin-top: 0px;
-    }
-
-    .quotes .quote-text {
-        font-size: 200%;
-        margin-top: 15%;
-    }
-
-    .quotes .quote-subtext {
-        font-size: 90%;
-        line-height: 0%;
-    }
-
-    .quotes button {
-        height: 15%;
-        font-size: 55%;
-        line-height: 0%;
-    }
-}
-
 .card-cont a {
     color: #ffffff;
     max-width: min-content;
@@ -159,25 +129,6 @@ header {
     transform: scale(1.3);
 }
 
-@media(max-width: 768px) {
-    .card-div {
-        width: 10rem;
-        height: 9rem;
-    }
-
-    .card-div b {
-        margin-bottom: 10%;
-        font-size: 60%;
-        line-height: 0%;
-    }
-
-    .card-img-top {
-        height: 50%;
-        width: 50%;
-    }
-
-}
-
 .passage {
     display: flex;
     justify-content: center;
@@ -197,14 +148,6 @@ header {
     font-family: "Quicksand";
     text-align: center;
 }
-
-@media (max-width: 768px) {
-    .passage span {
-        font-size: 80%;
-        line-height: 120%;
-    }
-}
-
 
 .phone-para {
     display: block;
@@ -263,16 +206,18 @@ header {
     margin-left: 120px;
 }
 
-@media (max-width: 768px) {
-    img.phone.img.img-fluid {
-        display: none;
-    }
-    
-    .rec-text-col p .rec-text,
-    .rec-text-col p .rec-text-1 {
-        font-size: 11px;
-    }
-} 
+.rec-1:hover {
+    transform: scale(1.2);
+}
+
+.rec-2:hover {
+    transform: scale(1.2);
+}
+
+.rec-1,
+.rec-2 {
+    transition: all 0.3s ease;
+}
 
 .layout-4 {
     background-color: rgba(170, 179, 60, 0.102);
@@ -331,44 +276,6 @@ header {
 .layout-4-btn:hover {
     background-color: #899d2b;
 }
-
- @media(max-width: 768px) {
-    .layout-4 .crop .lay-img {
-        margin-left: 26%;
-        height: 75%;
-    }
-
-    .overlay {
-        bottom: 56px;
-        right: 21px;
-        width: 27%;
-    }
-
-    .layout-4 .lay-text {
-        margin-left: 0%;
-        display: block;
-        font-size: 22px;
-        line-height: 25px;
-    }
-
-    .layout-4 .layout-p .layout-p-span {
-        margin-left: 0%;
-        font-size: 7px;
-        line-height: 9px;
-        margin-top: 0%;
-    }
-
-    .layout-4-btn {
-        width: 138px;
-        height: 18px;
-        font-size: 10px;
-        margin-bottom: 85px;
-    }
-
-    .layout-4 {
-        height: 402px;
-    }
-} 
 
 .table-striped tbody tr:nth-of-type(even) {
     background-color: rgba(170, 179, 59, 0.3);
@@ -459,55 +366,6 @@ td.money-span {
     font-weight: 600;
 }
 
-@media(max-width: 768px) {
-    .table {
-        width: 94%;
-        margin-left: 2%;
-    }
-
-    .table .tbl-width {
-        width: 66%;
-        font-size: 28px;
-        padding-bottom: 5%;
-    }
-
-    .table .tbl-head span {
-        font-size: 6px;
-    }
-
-    .table .tbl-head {
-        line-height: 20px;
-    }
-
-    .table td span {
-        display: block;
-        font-size: 7px;
-    }
-
-    img.tbl-img.img-fluid.ms-lg-5.mt-lg-3 {
-        width: 25%;
-        margin-left: 28%;
-        margin-top: 15%;
-    }
-
-    span.span-4 {
-        margin-top: -3%;
-    }
-
-    td.span-2 pre {
-        font-size: 10px;
-    }
-
-    td.span-2 p {
-        font-size: 22px;
-    }
-
-    td.money-span {
-        font-size: 75%;
-        padding: 8px;
-    }
-}
-
 .text-img {
     z-index: 1;
 }
@@ -537,14 +395,6 @@ body {
 .link-cont .click {
     font-size: 10px;
 }
-
-@media (max-width: 768px) {
-    p.text-img-p{
-        font-size: 130%;
-        margin-left: -9%;
-        margin-top: -2%;
-    }
-} 
 
 .card-card-1 {
     top: 80%;
@@ -605,35 +455,6 @@ img.card-img.position-relative {
     border: 0px;
 }
 
-@media (max-width: 768px) {
-    .card-img-1.col-lg-3 {
-        margin-left: -5%;
-    }
-
-    img.card-img.position-relative {
-        width: 110%;
-    }
-
-    .card-img-2.col-lg-3.col-md-3,
-    .card-img-3.col-lg-3.col-md-3 {
-        margin-left: 33px;
-    }
-
-    .card-card-1,
-    .card-card-2,
-    .card-card-3 {
-        font-size: 7px;
-        width: 95%;
-    }
-
-    p.card-text {
-        padding-top: 8px;
-        padding-left: 6px;
-        padding-right: 5px;
-        line-height: 9px;
-    }
-}
-
 .button p {
     font-size: 30px;
     color: #404142;
@@ -652,15 +473,6 @@ img.card-img.position-relative {
     margin-top: -1%;
     color: white;
     font-family: "Quicksand";
-}
-
-@media (max-width: 768px) {
-
-    .button p,
-    .button button {
-        margin-left: 30%;
-        margin-right: 34%;
-    }
 }
 
 footer {
@@ -686,9 +498,10 @@ footer {
     font-family: "Quicksand";
 }
 
+
 .font-4,
 .font-5 {
-    font-size: 70%;
+    font-size: 60%;
     color: #404142;
     font-weight: 500;
     font-family: "Quicksand";
@@ -703,6 +516,12 @@ footer {
 .font-bg-4:hover,
 .font-bg-5:hover {
     color: #848d00;
+}
+
+.row.justify-content-lg-center {
+    margin-left: 6%;
+    margin-right: 12%;
+    margin-bottom: 1%;
 }
 
 .but-footer {
@@ -729,28 +548,304 @@ footer {
 }
 
 .cpy-right {
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 1px;
-    line-height: 25px;
+    line-height: 6px;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 400;
     font-family: "Quicksand";
+    margin-top: 1%;
 }
 
-@media (max-width: 768px) {
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    header {
+        height: 350px;
+    }
+    .navbar-collapse {
+        position: absolute;
+        z-index: 1;
+        margin-top: 0px;
+    }
+    .quotes .quote-text {
+        font-size: 200%;
+        margin-top: 15%;
+    }
+    .quotes .quote-subtext {
+        font-size: 90%;
+        line-height: 0%;
+    }
+    .quotes button {
+        height: 15%;
+        font-size: 55%;
+        line-height: 0%;
+    }
+    .card-div {
+        width: 10rem;
+        height: 9rem;
+    }
+    .card-div b {
+        margin-bottom: 10%;
+        font-size: 60%;
+        line-height: 0%;
+    }
+    .card-img-top {
+        height: 50%;
+        width: 50%;
+    }
+    .passage span {
+        font-size: 80%;
+        line-height: 120%;
+    }
+    img.phone.img.img-fluid {
+        display: none;
+    }
+    .rec-text-col p .rec-text,
+    .rec-text-col p .rec-text-1 {
+        font-size: 11px;
+    }
+    .layout-4 .crop .lay-img {
+        margin-left: 26%;
+        height: 75%;
+    }
+    .overlay {
+        bottom: 56px;
+        right: 21px;
+        width: 27%;
+    }
+    .layout-4 .lay-text {
+        margin-left: 0%;
+        display: block;
+        font-size: 22px;
+        line-height: 25px;
+    }
+    .layout-4 .layout-p .layout-p-span {
+        margin-left: 0%;
+        font-size: 7px;
+        line-height: 9px;
+        margin-top: 0%;
+    }
+    .layout-4-btn {
+        width: 138px;
+        height: 18px;
+        font-size: 10px;
+        margin-bottom: 85px;
+    }
+    .layout-4 {
+        height: 402px;
+    }
+    .table {
+        width: 94%;
+        margin-left: 2%;
+    }
+    .table .tbl-width {
+        width: 66%;
+        font-size: 28px;
+        padding-bottom: 5%;
+    }
+    .table .tbl-head span {
+        font-size: 6px;
+    }
+    .table .tbl-head {
+        line-height: 20px;
+    }
+    .table td span {
+        display: block;
+        font-size: 7px;
+    }
+    img.tbl-img.img-fluid.ms-lg-5.mt-lg-3 {
+        width: 25%;
+        margin-left: 28%;
+        margin-top: 15%;
+    }
+    span.span-4 {
+        margin-top: -3%;
+    }
+    td.span-2 pre {
+        font-size: 10px;
+    }
+    td.span-2 p {
+        font-size: 22px;
+    }
+    td.money-span {
+        font-size: 75%;
+        padding: 8px;
+    }
+    p.text-img-p {
+        font-size: 130%;
+        margin-left: -9%;
+        margin-top: -2%;
+    }
+    .card-img-1.col-lg-3 {
+        margin-left: -5%;
+    }
+    img.card-img.position-relative {
+        width: 110%;
+    }
+    .card-img-2.col-lg-3.col-md-3,
+    .card-img-3.col-lg-3.col-md-3 {
+        margin-left: 33px;
+    }
+
+    .card-card-1,
+    .card-card-2,
+    .card-card-3 {
+        font-size: 7px;
+        width: 95%;
+    }
+
+    p.card-text {
+        padding-top: 8px;
+        padding-left: 6px;
+        padding-right: 5px;
+        line-height: 9px;
+    }
+
+    .button p,
+    .button button {
+        margin-left: 30%;
+        margin-right: 34%;
+    }
+
+    .button button {
+        width: 145px;
+        height: 30px;
+    }
+
+    .button p {
+        font-size: 23px;
+    }
+
     .foot-abt h6,
     .foot-get h6,
-    .foot-link h6{
+    .foot-link h6 {
         font-size: 65%;
     }
 
-    .foot-abt p{
-        font-size: 70%;
+    .foot-abt p {
+        font-size: 60%;
     }
 
     .foot-get p,
-    .foot-link p{
-        font-size: 62%;
+    .foot-link p {
+        font-size: 55%;
+    }
+
+    .form-control {
+        font-size: 50%;
+    }
+
+    .input-group.flex-nowrap.mb-1 {
+        width: 120%;
+        height: 10%;
+    }
+
+    .fa-solid,
+    .fas,
+    .fa-regular,
+    .far {
+        font-size: 10px;
+    }
+
+    .row.justify-content-lg-center {
+        margin-bottom: -3.6%;
+    }
+
+    .cpy-right {
+        font-size: 8px;
+    }
+
+    .but-footer {
+        width: 66%;
+        display: flex;
+        align-items: center;
+        margin-top: 0%;
     }
 }
+
+@media (max-width: 767px) {
+    header {
+        height: 190px;
+    }
+    .navbar-collapse {
+        position: absolute;
+        z-index: 1;
+        margin-top: 0px;
+    }
+    
+    #menu {
+        color: #ffffff;
+        font-size: 35%;
+        line-height: 280%;
+        padding: 0%;
+    }
+
+    #button {
+        font-size: 31%;
+        padding: 0%;
+    }
+
+    .quotes .quote-text {
+        font-size: 130%;
+        margin-top: 6%;
+    }
+
+    .quotes .quote-subtext {
+        font-size: 31%;
+        line-height: 40%;
+        margin-bottom: 9%;
+        margin-top: -6%;
+    }
+
+    .quotes button {
+        font-size: 29%;
+        height: 16px;
+        width: 27%;
+        line-height: 2px;
+    }
+
+    .passage span {
+        font-size: 9px;
+        line-height: 15px;
+    }
+
+    .phone-para {
+        margin-left: 150px;
+        font-size: 18px;
+    }
+
+    .phone-text-col {
+        margin-top: 19px;
+        margin-left: -61px;
+    }
+
+    .phone-text-col p .phone-span {
+        margin-left: 149px;
+    }
+
+    .rec-1 {
+        margin-left: 144px;
+        width: 18%;
+    }
+
+    .rec-text-col p .rec-text {
+        margin-left: 145px;
+        font-size: 8px;
+    }
+
+    .rec-2 {
+        margin-left: 120px;
+        width: 19%;
+        margin-bottom: -3%;
+    }
+
+    .rec-text-col p .rec-text-1 {
+        font-size: 8px;
+    }
+
+    
+
+
+}
+  
