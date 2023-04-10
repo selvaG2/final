@@ -1,71 +1,956 @@
-/* header */
-.header {
-    background-image: url('/assets/images/banner.png');
+/* downloded font */
+
+@font-face {
+    font-family: 'MyFont';
+    src: url(/assets/font/00819\ Regular.ttf);
+}
+
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* navbar */
+#menu {
+    color: #ffffff;
+    font-size: small;
+}
+
+#menu:hover {
+    color: #a9b33b;
+}
+
+#button {
+    color: #ffffff;
+    background-color: #a9b33b;
+    font-size: small;
+}
+
+#button:hover {
+    background-color: #5f6517;
+}
+
+.navbar-toggler {
+    background-color: #ffffff;
+    font-size: small;
+}
+
+ul li {
+    font-family: "Quicksand";
+    font-size: 16px;
+    line-height: 25px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.row {
+    --bs-gutter-x: 0rem;
+}
+
+/* header css */
+
+header {
+    background-image: url(./assets/images/banner.png);
+    height: 570px;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
-    /* Adjust this to your desired height */
+    background-size: contain;
 }
 
-/* nav bar  */
-.navbar-nav li.nav-item a.nav-link {
-    color: #ffffff;
-    font-family: 'Quicksand', sans-serif;
-}
 
-.navbar-nav li.nav-item a.nav-link:hover {
-    color: #aab33c;
-}
-
-.navbar-light .navbar-nav button.nav-link {
-    border-radius: 2px;
-    border: none;
-    color: #ffffff;
-    background-color: #aab33c;
-}
-
-.navbar-light .navbar-nav button.nav-link:hover {
-    background-color: #899d2b;
-}
-
-/* page 1 text */
+/* quotes css and media query */
 .quotes .quote-text {
     font-size: 50px;
     line-height: 25px;
     color: #aab33c;
-    font-family: 'Dancing Script', cursive;
-    padding-top: 200px;
+    font-family: MyFont;
+    margin-top: 25%;
+    margin-left: 38%;
 }
 
 .quotes .quote-subtext {
     display: block;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand";
     font-size: 20px;
     line-height: 10px;
     color: #ffffff;
     font-weight: 700;
     margin-bottom: 20px;
-    
+    margin-left: 38%;
+
 }
-/* page 1 button */
-.quotes button{
+
+/* page-1 button */
+.quotes button {
     display: block;
-    margin-top: 20px;
-    height: 50px;
-    padding: 10px 20px;
+    height: 40px;
+    padding: 10px 12px;
     background-color: #aab33c;
     border: none;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 15px;
     color: #ffffff;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* add a transition for the hover effect */
-  }
-  
-  .quotes button:hover {
-    background-color: #899d2b;
-    color: black;
-  }
+    transition: background-color 0.3s ease;
+    margin-left: 38%;
+}
 
-  
+.quotes button:hover {
+    background-color: #899d2b;
+    color: rgb(255, 255, 255);
+}
+
+/* second lay out cards */
+.card-cont a {
+    color: #ffffff;
+    max-width: min-content;
+}
+
+#card-color {
+    background-color: #d9dda9;
+}
+
+.card-div {
+    width: 10rem;
+    height: 10rem;
+}
+
+.card-div b {
+    font-size: 14px;
+    line-height: 28px;
+    color: #404142;
+    font-weight: 700;
+    font-family: "Quicksand";
+    text-align: center;
+}
+
+.card-div img {
+    width: 97px;
+    height: 83px;
+    filter: drop-shadow(3.83px 3.214px 7.5px rgba(136, 133, 38, 0.3));
+}
+
+.card-img-top {
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.3);
+}
+
+/* third layout text  */
+.passage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.passage span {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #404142;
+    font-weight: 700;
+    font-family: "Quicksand";
+    text-align: center;
+}
+
+.phone-para {
+    display: block;
+    margin-left: 220px;
+    font-size: 19px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #404142;
+    font-weight: 700;
+    font-family: "Quicksand";
+}
+
+.phone-text-col {
+    margin-top: 80px;
+    margin-left: -54px;
+}
+
+.phone-text-col p .phone-span {
+    display: block;
+    font-size: 10px;
+    line-height: 19px;
+    color: #404142;
+    font-weight: 600;
+    font-family: "Quicksand";
+    margin-left: 220px;
+}
+
+/* image inside the layout-3 css */
+.rec-1 {
+    margin-left: 220px;
+}
+
+.rec-2 {
+    margin-left: 120px;
+}
+
+.rec-text-col p .rec-text {
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #404142;
+    font-weight: 700;
+    font-family: "Quicksand";
+    display: block;
+    margin-left: 220px;
+}
+
+.rec-text-col p .rec-text-1 {
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #404142;
+    font-weight: 700;
+    font-family: "Quicksand";
+    display: block;
+    margin-left: 120px;
+}
+
+.rec-2:hover,
+.rec-1:hover {
+    transform: scale(1.2);
+}
+
+.rec-1,
+.rec-2 {
+    transition: all 0.3s ease;
+}
+
+/* computer lay out image css */
+.layout-4 {
+    background-color: rgba(170, 179, 60, 0.102);
+    width: 100%;
+    height: 560px;
+}
+
+.layout-4 .crop .lay-img {
+    margin-left: 35%;
+    width: 50%;
+    height: 90%;
+}
+
+.crop {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: -16px;
+    right: 15px;
+}
+
+/* layout 4 text css */
+.layout-4 .lay-text {
+    margin-left: 4%;
+    display: block;
+    font-size: 35px;
+    line-height: 40px;
+    color: #404142;
+    font-weight: 700;
+    font-family: "Quicksand";
+}
+
+.layout-4 .layout-p .layout-p-span {
+    margin-left: 4%;
+    display: block;
+    font-size: 11px;
+    line-height: 5px;
+    color: #404142;
+    font-weight: 500;
+    font-family: "Quicksand";
+    margin-top: 2%;
+}
+
+.layout-4-btn {
+    width: 200px;
+    height: 35px;
+    background-color: #aab33c;
+    border: none;
+    border-radius: 3%;
+    margin-left: 37%;
+    color: #ffffff;
+    font-family: "Quicksand";
+}
+
+.layout-4-btn:hover {
+    background-color: #899d2b;
+}
+
+/* table stripped colour change */
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: rgba(170, 179, 59, 0.3);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgb(255, 255, 255);
+}
+
+/* table css */
+.table {
+    overflow: hidden;
+    border-radius: 10px;
+    width: 72%;
+    margin-left: 15%;
+    border-collapse: collapse;
+}
+
+.table .tbl-head {
+
+    background-color: #aab33c;
+    line-height: 35px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Quicksand";
+}
+
+.table .tbl-width {
+    width: 65%;
+    font-size: 31px;
+    padding-bottom: 3%;
+}
+
+.table .tbl-head span {
+    display: block;
+    font-size: 8px;
+    line-height: 15px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Quicksand";
+}
+
+.table td span {
+    display: block;
+    font-size: 10px;
+    line-height: 15px;
+    color: #404142;
+    font-weight: 700;
+    font-family: "Quicksand";
+
+}
+
+td.span-2 {
+    padding: 10px;
+    height: 85px;
+}
+
+td.span-2 p {
+    width: 40%;
+    font-size: 25px;
+    line-height: 14px;
+    color: #aab33b;
+    font-weight: 700;
+    font-family: "Quicksand";
+    padding: 10px;
+}
+
+td.span-2 pre {
+    font-family: "Quicksand";
+    float: right;
+    font-size: 12px;
+}
+
+/* tick img css */
+td.span-2.span-space {
+    padding-top: 28px;
+}
+
+td.span-2.span-space-1 {
+    padding-top: 20px;
+}
+
+pre {
+    display: block;
+    margin-top: -47px;
+}
+
+td.money-span {
+    font-size: 89%;
+    font-weight: 600;
+}
+
+/* section 6 strip css */
+.text-img {
+    z-index: 1;
+}
+
+.text-img-p {
+    position: absolute;
+    top: 43%;
+    left: 20%;
+    z-index: 2;
+    font-size: 30px;
+    line-height: 46px;
+    color: #404142;
+    font-weight: 700;
+    font-family: "Quicksand";
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.text-img-p:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.link-cont .click {
+    font-size: 10px;
+}
+
+/* card in card css */
+.card-card-1,
+.card-card-2,
+.card-card-3{
+    display: flex;
+    flex-direction: row;
+    filter: drop-shadow(3.064px 2.571px 5px rgba(136, 133, 38, 0.17));
+    background-color: #fdffe9;
+    column-rule-color: black;
+    font-size: 9px;
+}
+
+.card-card-1 {
+    top: 80%;
+    width: 78%;
+    height: 32%;
+    
+}
+
+.card-card-2 {
+    top: 83%;
+    width: 78%;
+    height: 36%;
+}
+
+.card-card-3 {
+    top: 80%;
+    width: 78%;
+    height: 38%;
+}
+/* card in card text */
+p.card-text {
+    color: black;
+    padding-top: 8px;
+    padding-left: 6px;
+    padding-right: 5px;
+    line-height: 12px;
+    color: #404142;
+    font-weight: 500;
+    font-family: "Quicksand";
+}
+
+img.card-img.position-relative {
+    width: 88%;
+}
+
+.card-img-1.col-lg-3 {
+    margin-left: 5%;
+}
+
+.card {
+    border: 0px;
+}
+
+/* get deal strip css */
+.button p {
+    font-size: 30px;
+    color: #404142;
+    font-weight: 700;
+    font-family: "Quicksand";
+    text-align: center;
+    margin-left: 30px;
+}
+
+.button button {
+    width: 225px;
+    height: 40px;
+    background-color: #aab33c;
+    border: none;
+    margin-left: 30px;
+    margin-top: -1%;
+    color: white;
+    font-family: "Quicksand";
+}
+
+.button button:hover{
+    background-color: #848d00;
+}
+
+/* footer fonts */
+.font-2 {
+    width: 260px;
+    height: 130px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #404142;
+    font-weight: 400;
+    font-family: "Quicksand";
+}
+
+.font-3,
+.font-4,
+.font-5 {
+    font-size: 70%;
+    color: #404142;
+    font-family: "Quicksand";
+}
+
+.font-4,
+.font-5 {
+    font-weight: 500;
+}
+
+.font-bg-4,
+.font-bg-5 {
+    color: black;
+    text-decoration: none;
+}
+
+.font-bg-4:hover,
+.font-bg-5:hover {
+    color: #848d00;
+}
+
+/* footer background */
+.footer-bg {
+    background-image: url('assets/images/footer.png');
+}
+
+/* footer button */
+.but-footer {
+    color: #ffffff;
+    background-color: #acb643;
+    font-size: small;
+    border: none;
+}
+
+.but-footer:hover {
+    background-color: #8b9429;
+}
+
+#fav {
+    color: #a8b336;
+}
+
+#fav-2 {
+    color: white;
+}
+
+#addon-wrapping {
+    background-color: #acb643;
+}
+#footer {
+    background-color: #acb643;
+    font-size: small;
+}
+
+#small-icon {
+    font-size: 80%;
+    font-family: 'quicksand';
+    font-weight: 700px;
+    color: black;
+}
+
+/* media query for table view of 768 px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    header {
+        height: 350px;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        z-index: 1;
+        margin-top: 0px;
+    }
+
+    #menu {
+        font-size: 66%;
+        line-height: 167%;
+    }
+
+    .quotes .quote-text {
+        font-size: 200%;
+        margin-top: 15%;
+    }
+
+    .quotes .quote-subtext {
+        font-size: 90%;
+        line-height: 0%;
+    }
+
+    .quotes button {
+        height: 15%;
+        font-size: 55%;
+        line-height: 0%;
+    }
+
+    .card-div {
+        width: 10rem;
+        height: 9rem;
+    }
+
+    .card-div b {
+        margin-bottom: 10%;
+        font-size: 60%;
+        line-height: 0%;
+    }
+
+    .card-img-top {
+        height: 50%;
+        width: 50%;
+    }
+
+    .passage span {
+        font-size: 80%;
+        line-height: 120%;
+    }
+
+    img.phone.img.img-fluid {
+        display: none;
+    }
+
+    .rec-text-col p .rec-text,
+    .rec-text-col p .rec-text-1 {
+        font-size: 11px;
+    }
+
+    .layout-4 .crop .lay-img {
+        margin-left: 26%;
+        height: 75%;
+    }
+
+    .overlay {
+        bottom: 56px;
+        right: 21px;
+        width: 27%;
+    }
+
+    .layout-4 .lay-text {
+        margin-left: 0%;
+        display: block;
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    .layout-4 .layout-p .layout-p-span {
+        margin-left: 0%;
+        font-size: 7px;
+        line-height: 9px;
+        margin-top: 0%;
+    }
+
+    .layout-4-btn {
+        width: 138px;
+        height: 18px;
+        font-size: 10px;
+        margin-bottom: 85px;
+    }
+
+    .layout-4 {
+        height: 402px;
+    }
+
+    .table {
+        width: 94%;
+        margin-left: 2%;
+    }
+
+    .table .tbl-width {
+        width: 66%;
+        font-size: 28px;
+        padding-bottom: 5%;
+    }
+
+    .table .tbl-head span {
+        font-size: 6px;
+    }
+
+    .table .tbl-head {
+        line-height: 20px;
+    }
+
+    .table td span {
+        display: block;
+        font-size: 7px;
+    }
+
+    img.tbl-img.img-fluid.ms-lg-5.mt-lg-3 {
+        width: 25%;
+        margin-left: 28%;
+        margin-top: 15%;
+    }
+
+    span.span-4 {
+        margin-top: -3%;
+    }
+
+    td.span-2 pre {
+        font-size: 10px;
+    }
+
+    td.span-2 p {
+        font-size: 22px;
+    }
+
+    td.money-span {
+        font-size: 75%;
+        padding: 8px;
+    }
+
+    p.text-img-p {
+        font-size: 130%;
+        margin-left: -9%;
+        margin-top: -2%;
+    }
+
+    .card-img-1.col-lg-3 {
+        margin-left: -5%;
+    }
+
+    img.card-img.position-relative {
+        width: 110%;
+    }
+
+    .card-img-2.col-lg-3.col-md-3,
+    .card-img-3.col-lg-3.col-md-3 {
+        margin-left: 33px;
+    }
+
+    .card-card-1,
+    .card-card-2,
+    .card-card-3 {
+        font-size: 7px;
+        width: 95%;
+    }
+
+    p.card-text {
+        padding-top: 8px;
+        padding-left: 6px;
+        padding-right: 5px;
+        line-height: 9px;
+    }
+
+    .button p,
+    .button button {
+        margin-left: 30%;
+        margin-right: 34%;
+    }
+
+    .button button {
+        width: 145px;
+        height: 30px;
+    }
+
+    .button p {
+        font-size: 23px;
+    }
+
+}
+
+/* media query for mobile-L */
+@media (max-width: 767px) {
+    header {
+        height: 190px;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        z-index: 1;
+        margin-top: 0px;
+    }
+
+    #menu {
+        color: #ffffff;
+        font-size: 35%;
+        line-height: 280%;
+        padding: 0%;
+    }
+
+    #button {
+        font-size: 31%;
+        padding: 0%;
+    }
+
+    .quotes .quote-text {
+        font-size: 130%;
+        margin-top: 6%;
+    }
+
+    .quotes .quote-subtext {
+        font-size: 31%;
+        line-height: 40%;
+        margin-bottom: 9%;
+        margin-top: -6%;
+    }
+
+    .quotes button {
+        font-size: 29%;
+        height: 16px;
+        width: 27%;
+        line-height: 2px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 177px;
+        height: auto;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .lay-img,
+    .overlay,
+    img.phone.img.img-fluid {
+        display: none;
+    }
+
+    .card {
+        max-width: 185px;
+        max-height: 200px;
+    }
+
+    .passage span {
+        font-size: 9px;
+        line-height: 15px;
+    }
+
+    .phone-para {
+        margin-left: 150px;
+        font-size: 18px;
+    }
+
+    .phone-text-col {
+        margin-top: 19px;
+        margin-left: -61px;
+    }
+
+    .phone-text-col p .phone-span {
+        margin-left: 149px;
+    }
+
+    .rec-1 {
+        margin-left: 144px;
+        width: 18%;
+    }
+
+    .rec-text-col p .rec-text {
+        margin-left: 145px;
+        font-size: 8px;
+    }
+
+    .rec-2 {
+        margin-left: 120px;
+        width: 19%;
+        margin-bottom: -3%;
+    }
+
+    .rec-text-col p .rec-text-1 {
+        font-size: 8px;
+    }
+
+    .layout-4 .lay-text {
+        margin-left: 10%;
+        display: block;
+        font-size: 150%;
+        margin-bottom: -3%;
+    }
+
+    .col-lg-6.layout-text.mt-5.col-md-6 {
+        margin-left: 10%;
+    }
+
+    .layout-4 .layout-p .layout-p-span {
+        font-size: 8px;
+        margin-left: 10%;
+    }
+
+    .layout-4 {
+        height: 417px;
+    }
+
+    .layout-4-btn {
+        width: 151px;
+        height: 19px;
+        font-size: 70%;
+        margin-left: 28%;
+    }
+
+    .table {
+        width: 101%;
+        margin-left: 0%;
+    }
+
+    td.span-2 pre {
+        display: none;
+    }
+
+    td.span-2 p {
+        font-size: 26px;
+        line-height: 17px;
+    }
+
+    .text-img-p {
+        top: -1%;
+        left: 19%;
+        font-size: 11px;
+    }
+    .card {
+        max-width: 185px;
+    }
+
+    .card-img-1,
+    .card-img-2,
+    .card-img-3 {
+        margin-left: 10%;
+        width: 55%;
+    }
+
+    img.card-img.position-relative {
+        width: 111%;
+    }
+
+    .card-card-1,
+    .card-card-2,
+    .card-card-3{
+        width: 100%;
+        left: 5%;
+    }
+
+    p.card-text{
+        padding-top: 4px;
+    }
+
+    .card-img-2, .card-img-3 {
+        margin-top: 10%;
+ 
+   }
+
+   .footer-row{
+    margin-left: 4%;
+    margin-right: 4%;
+    }
+}
+
+/* media query for laptop-L */
+@media (min-width: 1440px) {
+
+    header{
+        height: 631px
+    }  
+    
+}
