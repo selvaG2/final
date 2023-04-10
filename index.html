@@ -22,6 +22,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <!-- fontawsome -->
     <script src="https://kit.fontawesome.com/899f4385bc.js" crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="/assets/js/validate.js"></script>
 
 </head>
 
@@ -35,7 +40,7 @@
                     <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent" id="nav">
                         <!-- logo -->
                         <div class="col-3">
-                            <a href="#"> <img src="/assets/images/logo.svg" class="img-fluid" width="150px"
+                            <a href="#"> <img src="/assets/images/logo.svg" class="logo img-fluid" width="150px"
                                     alt="logo"></a>
                         </div>
 
@@ -52,17 +57,17 @@
                                         <a class="nav-link link-light" id="menu" href="#">HOME</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link link-light" id="menu" href="#">PLANS</a>
+                                        <a class="nav-link link-light" id="menu" href="#tbl">PLANS</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link link-light" id="menu" href="#">LEARN MORE</a>
+                                        <a class="nav-link link-light" id="menu" href="#learn">LEARN MORE</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link link-light" id="menu" href="#">WIDGET</a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link link-light" id="menu" href="#">CONTACT US</a>
+                                        <a class="nav-link link-light" id="menu" href="#foot">CONTACT US</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link link-light" id="menu" href="#">FRANÇAIS</a>
@@ -73,8 +78,9 @@
                                     <!-- Navbar button -->
                                     <li class="nav-item">
 
-                                        <button class="border-0 mt-2 ms-2 ps-3 pe-3" id="button" type="submit">GET THE
-                                            DEAL</button>
+                                        <a href="#deal"><button class="border-0 mt-2 ms-2 ps-3 pe-3" id="button"
+                                                type="submit" onclick=>GET THE
+                                                DEAL</button></a>
                                     </li>
                                 </ul>
                             </div>
@@ -168,7 +174,7 @@
     </section>
 
     <!-- third layout goes here -->
-    <section class="phone mt-4 ">
+    <section class="phone mt-4 " id="learn">
         <div class="container">
 
             <div class="row">
@@ -281,7 +287,7 @@
 
     <!-- fifth layout goes here -->
     <section>
-        <div class="container">
+        <div class="container " id="tbl">
             <!-- table goes here -->
             <table class="table table-striped table-hover mt-5">
                 <thead>
@@ -463,10 +469,10 @@ Annual contract</b></pre>
         </div>
 
         <!-- get deal inside the card -->
-        <div class="row justify-content-center mt-5">
+        <div class="row justify-content-center mt-5" id="deal">
             <div class="button text-center">
                 <p class="btn-p">Get the real deal</p>
-                <button >START NOW</button>
+                <button>START NOW</button>
             </div>
         </div>
 
@@ -474,15 +480,17 @@ Annual contract</b></pre>
     </section>
 
     <!-- footer -->
-   
-    <footer class="footer-bg mt-4">
+
+    <footer class="footer-bg mt-4" id="foot">
         <div class="container-fluid">
-            <div class="footer-row row justify-content-start justify-content-md-center justify-content-lg-center pt-3 pb-3 pt-md-3 pb-md-4 pt-lg-3 pb-lg-4">
+            <div
+                class="footer-row row justify-content-start justify-content-md-center justify-content-lg-center pt-3 pb-3 pt-md-3 pb-md-4 pt-lg-3 pb-lg-4">
                 <div class="col-7 col-md-3 col-lg-2 mt-md-4 mt-lg-4">
                     <!-- about us -->
                     <h6><b>ABOUT US</b></h6>
                     <div class="font-3 mt-lg-3">
-                        <p>iAnalyzeREI instantly analyzes commercial and multifamily income properties. This web-based software is an essential tool for every real estate professional.
+                        <p>iAnalyzeREI instantly analyzes commercial and multifamily income properties. This web-based
+                            software is an essential tool for every real estate professional.
                         </p>
                     </div>
                 </div>
@@ -496,11 +504,13 @@ Annual contract</b></pre>
                                 Sherbrooke (QC) Canada J1H 1N
                             </a></p>
                         <p>
-                            <a href="#" class="font-bg-4 text-black text-decoration-none"> <i class="fa-solid fa-phone-volume pe-2 " id="fav"></i>+1 222-222-222
+                            <a href="#" class="font-bg-4 text-black text-decoration-none"> <i
+                                    class="fa-solid fa-phone-volume pe-2 " id="fav"></i>+1 222-222-222
                             </a>
                         </p>
                         <p>
-                            <a href="#" class="font-bg-4 text-black text-decoration-none"> <i class="fa-regular fa-envelope pe-2" id="fav"></i>support@magexTech.com</a>
+                            <a href="#" class="font-bg-4 text-black text-decoration-none"> <i
+                                    class="fa-regular fa-envelope pe-2" id="fav"></i>support@magexTech.com</a>
                         </p>
                     </div>
                 </div>
@@ -523,29 +533,35 @@ Annual contract</b></pre>
                 </div>
                 <!-- form -->
                 <div class="col-md-9 col-lg-2 mt-4 mx-md-3">
-                    <div class="input-group flex-nowrap mb-2">
-                        <span class="input-group-text icon" id="addon-wrapping"><i class="fa-solid fa-user"
-                                id="fav-2"></i></span>
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
-                    </div>
-                    <div class="input-group flex-nowrap mb-2">
-                        <span class="input-group-text icon" id="addon-wrapping"><i class="fa-regular fa-envelope"
-                                id="fav-2"></i></span>
-                        <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="addon-wrapping">
-                    </div>
-                    <div class="input-group flex-nowrap mb-2">
-                        <span class="input-group-text icon" id="addon-wrapping"><i
-                                class="fa-sharp fa-solid fa-square-phone" id="fav-2"></i></span>
-                        <input type="text" class="form-control" placeholder="Phone" aria-label="Phone" aria-describedby="addon-wrapping">
-                    </div>
-                    <div class="input-group flex-nowrap mb-2">
-                        <span class="input-group-text icon" id="addon-wrapping"><i class="fa-solid fa-comment"
-                                id="fav-2"></i></span>
-                        <input type="text" class="form-control" placeholder="Comments" aria-label="Comments" aria-describedby="addon-wrapping">
-                    </div>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button class="rounded-1 but-footer ps-3 pe-3 pt-1 pb-1" type="button">SUBMIT</button>
-                    </div>
+                    <form action="" id="myform">
+                        <div class="input-group flex-nowrap mb-2">
+                            <span class="input-group-text icon" id="addon-wrapping"><i class="fa-solid fa-user"
+                                    id="fav-2"></i></span>
+                            <input type="text" class="username form-control" placeholder="Username" aria-label="Username"
+                                aria-describedby="addon-wrapping">
+                        </div>
+                        <div class="input-group flex-nowrap mb-2">
+                            <span class="input-group-text icon" id="addon-wrapping"><i class="fa-regular fa-envelope"
+                                    id="fav-2"></i></span>
+                            <input type="email" class="email form-control" placeholder="Email" aria-label="Email"
+                                aria-describedby="addon-wrapping">
+                        </div>
+                        <div class="input-group flex-nowrap mb-2">
+                            <span class="input-group-text icon" id="addon-wrapping"><i
+                                    class="fa-sharp fa-solid fa-square-phone" id="fav-2"></i></span>
+                            <input type="text" class="phone form-control" placeholder="Phone" aria-label="Phone"
+                                aria-describedby="addon-wrapping">
+                        </div>
+                        <div class="input-group flex-nowrap mb-2">
+                            <span class="input-group-text icon" id="addon-wrapping"><i class="fa-solid fa-comment"
+                                    id="fav-2"></i></span>
+                            <input type="text" class="comment form-control" placeholder="Comments" aria-label="Comments"
+                                aria-describedby="addon-wrapping">
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button class="rounded-1 but-footer ps-3 pe-3 pt-1 pb-1" type="button">SUBMIT</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -558,11 +574,11 @@ Annual contract</b></pre>
                 <div class="col-md-7 col-lg-7 text-center text-md-start text-lg-start">
 
                     <div class="p-lg-3 ms-md-3 ms-lg-5 mt-2 mt-md-2 text-white font-monospace text-uppercase">
-                        <p>© Copyright 2021 - MAGEX TECHNOLOGIES INC. All Rights Reserved.</p>
+                        <p class="cpy-p1">© Copyright 2021 - MAGEX TECHNOLOGIES INC. All Rights Reserved.</p>
                     </div>
                 </div>
                 <div class="col-2 col-md-2 col-lg-2 ms-md-4 mt-md-2 text-white">
-                    <p>T & C S</p>
+                    <p class="cpy-p1">T & C S</p>
                 </div>
             </div>
         </section>
