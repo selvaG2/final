@@ -485,13 +485,6 @@ img.card-img.position-relative {
     background-color: #848d00;
 }
 
-footer {
-    background-image: url('/assets/images/footer.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-
 .font-2 {
     width: 260px;
     height: 130px;
@@ -508,10 +501,9 @@ footer {
     font-family: "Quicksand";
 }
 
-
 .font-4,
 .font-5 {
-    font-size: 60%;
+    font-size: 70%;
     color: #404142;
     font-weight: 500;
     font-family: "Quicksand";
@@ -528,12 +520,9 @@ footer {
     color: #848d00;
 }
 
-.row.justify-content-lg-center {
-    margin-left: 6%;
-    margin-right: 12%;
-    margin-bottom: 1%;
+.footer-bg {
+    background-image: url('assets/images/footer.png');
 }
-
 .but-footer {
     color: #ffffff;
     background-color: #acb643;
@@ -556,18 +545,17 @@ footer {
 #addon-wrapping {
     background-color: #acb643;
 }
-
-.cpy-right {
-    font-size: 13px;
-    letter-spacing: 1px;
-    line-height: 6px;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-weight: 400;
-    font-family: "Quicksand";
-    margin-top: 1%;
+#footer {
+    background-color: #acb643;
+    font-size: small;
 }
 
+#small-icon {
+    font-size: 80%;
+    font-family: 'quicksand';
+    font-weight: 700px;
+    color: black;
+}
 
 @media (min-width: 768px) and (max-width: 1023px) {
     header {
@@ -578,6 +566,11 @@ footer {
         position: absolute;
         z-index: 1;
         margin-top: 0px;
+    }
+
+    #menu {
+        font-size: 66%;
+        line-height: 167%;
     }
 
     .quotes .quote-text {
@@ -757,51 +750,7 @@ footer {
         font-size: 23px;
     }
 
-    .foot-abt h6,
-    .foot-get h6,
-    .foot-link h6 {
-        font-size: 65%;
-    }
-
-    .foot-abt p {
-        font-size: 60%;
-    }
-
-    .foot-get p,
-    .foot-link p {
-        font-size: 55%;
-    }
-
-    .form-control {
-        font-size: 50%;
-    }
-
-    .input-group.flex-nowrap.mb-1 {
-        width: 120%;
-        height: 10%;
-    }
-
-    .fa-solid,
-    .fas,
-    .fa-regular,
-    .far {
-        font-size: 10px;
-    }
-
-    .row.justify-content-lg-center {
-        margin-bottom: -3.6%;
-    }
-
-    .cpy-right {
-        font-size: 8px;
-    }
-
-    .but-footer {
-        width: 66%;
-        display: flex;
-        align-items: center;
-        margin-top: 0%;
-    }
+    
 }
 
 @media (max-width: 767px) {
@@ -934,8 +883,8 @@ footer {
     }
 
     .table {
-        width: 85%;
-        margin-left: 9%;
+        width: 101%;
+        margin-left: 0%;
     }
 
     td.span-2 pre {
@@ -952,6 +901,33 @@ footer {
         left: 19%;
         font-size: 11px;
     }
+    .card {
+        max-width: 185px;
+    }
 
+    .card-img-1,
+    .card-img-2, 
+    .card-img-3 {
+        margin-left: 10%;
+        width: 55%;
+    }
 
+    img.card-img.position-relative {
+        width: 111%;
+    }
+
+    .card-card-1,
+    .card-card-2,
+    .card-card-3{
+        width: 100%;
+        left: 5%;
+    }
+
+    p.card-text{
+        padding-top: 4px;
+    }
+
+    .card-img-2, .card-img-3 {
+        margin-top: 10%;
+    }
 }
