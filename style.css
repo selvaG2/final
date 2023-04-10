@@ -1,3 +1,20 @@
+/* downloded font */
+
+@font-face {
+    font-family: 'MyFont';
+    src: url(/assets/font/00819\ Regular.ttf);
+}
+
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* navbar */
 #menu {
     color: #ffffff;
     font-size: small;
@@ -921,4 +938,12 @@ img.card-img.position-relative {
     .card-img-2, .card-img-3 {
         margin-top: 10%;
     }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+    header{
+        height: 631px
+    }
+
 }
