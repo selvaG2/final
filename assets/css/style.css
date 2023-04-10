@@ -54,7 +54,7 @@ ul li {
 /* header css */
 
 header {
-    background-image: url(./assets/images/banner.png);
+    background-image: url(/assets/images/banner.png);
     height: 570px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -526,7 +526,7 @@ img.card-img.position-relative {
 
 /* footer background */
 .footer-bg {
-    background-image: url('assets/images/footer.png');
+    background-image: url(/assets/images/footer.png);
 }
 
 /* footer button */
