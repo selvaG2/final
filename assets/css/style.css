@@ -465,7 +465,13 @@ img.card-img.position-relative {
 
 .card {
     border: 0px;
+    transition: all 0.2s ease;
 }
+
+.card:hover {
+    transform: translateY(-10px);
+  }
+  
 
 /* get deal strip css */
 .button p {
@@ -1181,8 +1187,7 @@ label.error {
         line-height: 22px;
     }
 
-    .h6,
-    h6 {
+    .h6,h6 {
         font-size: 2rem;
     }
 

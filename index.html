@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/validate.js"></script>
     <!-- font 1 -->
     <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,7 +64,7 @@
                                         <a class="nav-link link-light" id="menu" href="#learn">LEARN MORE</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link link-light" id="menu" href="#">WIDGET</a>
+                                        <a class="nav-link link-light" id="menu" href="#layout-7">WIDGET</a>
                                     </li>
 
                                     <li class="nav-item">
@@ -92,7 +93,7 @@
                             <p class="quote-text">The Best</p>
                             <span class="quote-subtext"> REAL ESTATE ANALYSIS</span>
                             <span class="quote-subtext"> SOFTWARE IN NORTH AMERICA</span>
-                            <span class="quote_button mt-5"><button>START NOW</button></span>
+                            <span class="quote_button mt-5"><button onclick="error()">START NOW</button></span>
                         </div>
 
                     </div>
@@ -279,7 +280,7 @@
                             institution</span>
                     </p>
 
-                    <button class="layout-4-btn mt-4">VIEW SAMPLE REPORT</button>
+                    <button class="layout-4-btn mt-4" onclick="report()">VIEW SAMPLE REPORT</button>
                 </div>
             </div>
         </div>
@@ -379,12 +380,12 @@
 Annual contract</b></pre>
                         </td>
                         <td class="money-span">
-                            <p>$42.80/month</p>
-                            <p>$37.32/month
+                            <p><a href="" class="text-decoration-none text-dark" onclick="plans()">$42.80/month</a></p>
+                            <p><a href="" class="text-decoration-none text-dark" onclick="plans()">$37.32/month</a></p>
                             <p>
                         </td>
                         <td class="money-span">
-                            <p>$16.05/month</p>
+                            <p><a href="" class="text-decoration-none text-dark" onclick="plans()">$16.05/month</a></p>
                         </td>
                     </tr>
                 </tbody>
@@ -409,7 +410,7 @@ Annual contract</b></pre>
     </section>
 
     <!-- seventh layout goes here -->
-    <section>
+    <section id="layout-7">
         <div class="container">
             <div class="row justify-content-center mt-5">
                 <!-- card with-in card-1 -->
@@ -472,7 +473,7 @@ Annual contract</b></pre>
         <div class="row justify-content-center mt-5" id="deal">
             <div class="button text-center">
                 <p class="btn-p">Get the real deal</p>
-                <button>START NOW</button>
+                <button onclick="deal()">START NOW</button>
             </div>
         </div>
 
@@ -551,7 +552,7 @@ Annual contract</b></pre>
                           <input type="text" class="comment form-control" name="comment" placeholder="Comments" aria-label="Comments" aria-describedby="addon-wrapping">
                         </div>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                          <button class="rounded-1 but-footer ps-3 pe-3 pt-1 pb-1" type="submit">SUBMIT</button>
+                          <button class="rounded-1 but-footer ps-3 pe-3 pt-1 pb-1" type="submit" onclick="response()">SUBMIT</button>
                         </div>
                       </form>                      
                 </div>
