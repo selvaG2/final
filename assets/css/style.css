@@ -991,7 +991,7 @@ label.error {
 }
 
 
-/* media query for large desktop */
+/* media query for 4k desktop */
 @media only screen and (min-width: 1441px) and (max-width: 2560px) {
     header {
         height: 1121px
@@ -1222,6 +1222,7 @@ label.error {
     }
 }
 
+/* small mobile media query */
 @media(max-width:320px){
     .table {
         width: 101%;
