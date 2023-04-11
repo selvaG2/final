@@ -569,11 +569,19 @@ img.card-img.position-relative {
     color: black;
 }
 
-form .error {
-    color: #4c5504;
-}
+label.error {
+    display: block;
+    color: red;
+    font-size: 11px;
+    margin-top: 5px;
+  }
 
-/* media query for table view of 768 px */
+  .error {
+    margin-bottom: 10px;
+  }
+  
+
+/* media query for tablet view of 768 px */
 @media (min-width: 768px) and (max-width: 1023px) {
     header {
         height: 350px;
@@ -961,11 +969,29 @@ form .error {
 @media (min-width: 1440px) {
 
     header {
-        height: 631px
+        height: 631px;
     }
 
 }
 
+@media only screen and (min-width: 1441px) {
+  /* CSS rules for screens with a width larger than 1440px */
+  
+  @media only screen and (min-width: 1035px) and (max-width: 1440px) {
+    /* CSS rules for screens with a width between 1035px and 1440px */
+    
+    header{
+        height: 469px;
+    }
+
+    .container-fluid card-cont{
+        margin-top: -10%;
+    }
+  }
+}
+
+
+/* media query for large desktop */
 @media only screen and (min-width: 1441px) and (max-width: 2560px) {
     header {
         height: 1121px
@@ -974,6 +1000,84 @@ form .error {
     #menu {
         font-size: 25px;
         padding-right: 33px;
+    }
+
+    .quotes .quote-text {
+        font-size: 162px;
+    }
+
+    .quotes .quote-subtext {
+        margin-top: 6%;
+        font-size: 44px;
+        line-height: 0px;
+    }
+
+    .quotes button {
+        margin-top: 4%;
+        height: 72px;
+        font-size: 35px;
+    }
+
+    .phone-para {
+        margin-left: 0px;
+        font-size: 41px;
+        line-height: 41px;
+    }
+
+    .phone-text-col p .phone-span {
+        font-size: 20px;
+        line-height: 32px;
+        margin-left: 0px;
+    }
+
+    img.phone.img.img-fluid {
+        width: 100%;
+        margin-left: 32%;
+    }
+
+    img.img-fluid.rec-1.mt-2 {
+        height: 60%;
+        width: 35%;
+        margin-left: 0px;
+    }
+
+    .rec-text-col p .rec-text {
+        font-size: 27px;
+        line-height: 34px;
+        margin-left: 0px;
+    }
+
+    img.img-fluid.rec-2.mt-2 {
+        width: 37%;
+    }
+
+    .rec-text-col p .rec-text-1 {
+        font-size: 29px;
+        line-height: 34px;
+    }
+
+    .container-fluid .card-cont{
+        margin-top: -10%;
+    }
+
+    .passage span {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .card-div {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .card-div img {
+        width: 177px;
+        height: 200px;
+    }
+
+    .card-div b {
+        font-size: 24px;
+        line-height: 40px;
     }
 
     img.logo.img-fluid {
@@ -994,6 +1098,87 @@ form .error {
         width: 310px;
         height: 58px;
         font-size: 30px;
+    }
+
+    .layout-4 .crop .lay-img {
+        margin-left: 38%;
+        width: 40%;
+        height: 90%;
+    }
+
+    .layout-4 {
+        height: 845px;
+    }
+
+    .overlay {
+        bottom: -15px;
+        right: 145px;
+        width: 18%;
+    }
+
+    .layout-4 .lay-text {
+        margin-left: 0%;
+        font-size: 65px;
+        line-height: 58px;
+    }
+
+    .layout-4 .layout-p .layout-p-span {
+        margin-left: 0%;
+        font-size: 20px;
+        line-height: 16px;
+    }
+
+    .layout-4-btn {
+        width: 280px;
+        height: 57px;
+        font-size: 123%;
+    }
+
+    .phone-text-col {
+        margin-top: 85px;
+        margin-left: -148px;
+    }
+
+    .table {
+        width: 100%;
+        margin-left: 2%;
+    }
+
+    .table td span {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .table .tbl-head span {
+        font-size: 10px;
+    }
+
+    .table .tbl-width {
+        width: 67%;
+        font-size: 39px;
+        padding-bottom: 2%;
+    }
+    .card-img-1.col-lg-3 {
+        margin-left: -21%;
+    }
+
+    img.card-img.position-relative {
+        width: 130%;
+    }
+
+    .card-img-2.col-lg-3.col-md-3,.card-img-3.col-lg-3.col-md-3 {
+        margin-left: 12%;
+    }
+
+    .card-card-1,.card-card-2,.card-card-3 {
+        width: 114%;
+        height: 34%;
+    }
+
+    p.card-text {
+        font-size: 23px;
+        padding-top: 1px;
+        line-height: 22px;
     }
 
     .h6,
@@ -1028,7 +1213,18 @@ form .error {
         width: 30%;
     }
 
-    .cpy-p1 {
+    .cpy-p1,.cpy-p2 {
         font-size: 25px;
+    }
+
+    .cpy-p2{
+        margin-left: 34%;
+    }
+}
+
+@media(max-width:320px){
+    .table {
+        width: 101%;
+        margin-left: -7%;
     }
 }
