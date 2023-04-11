@@ -386,6 +386,7 @@ td.money-span {
 td:nth-child(odd) {
     box-shadow: inset 1px 8px 20px 0px rgba(54, 52, 52, 0.2);
 }
+
 .table>:not(:last-child)>:last-child>* {
     box-shadow: 1px -1px 20px 8px rgba(54, 52, 52, 0.2);
 }
@@ -477,8 +478,8 @@ img.card-img.position-relative {
 
 .card:hover {
     transform: translateY(-10px);
-  }
-  
+}
+
 
 /* get deal strip css */
 .button p {
@@ -584,8 +585,8 @@ img.card-img.position-relative {
 
 input.error {
     box-shadow: 0px 0px 5px 1px rgba(255, 0, 0, 1);
-  }
-    
+}
+
 
 /* media query for tablet view of 768 px */
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -747,11 +748,14 @@ input.error {
         width: 110%;
     }
 
-    .card-img-2.col-lg-3.col-md-3,.card-img-3.col-lg-3.col-md-3 {
+    .card-img-2.col-lg-3.col-md-3,
+    .card-img-3.col-lg-3.col-md-3 {
         margin-left: 33px;
     }
 
-    .card-card-1,.card-card-2,.card-card-3 {
+    .card-card-1,
+    .card-card-2,
+    .card-card-3 {
         font-size: 7px;
         width: 95%;
     }
@@ -763,7 +767,8 @@ input.error {
         line-height: 9px;
     }
 
-    .button p,.button button {
+    .button p,
+    .button button {
         margin-left: 30%;
         margin-right: 34%;
     }
@@ -782,7 +787,7 @@ input.error {
 
 /* media query for mobile-L */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  
+
     header {
         height: 190px;
     }
@@ -800,9 +805,12 @@ input.error {
         padding: 0%;
     }
 
-    #button {
-        font-size: 31%;
-        padding: 0%;
+    #button,
+    .rec-1,
+    .rec-text-col p .rec-text,
+    .rec-2,
+    .rec-text-col p .rec-text-1 {
+        display: none;
     }
 
     .quotes .quote-text {
@@ -822,6 +830,7 @@ input.error {
         height: 16px;
         width: 27%;
         line-height: 2px;
+        margin-top: -6%;
     }
 
     .card {
@@ -935,7 +944,9 @@ input.error {
         max-width: 185px;
     }
 
-    .card-img-1,.card-img-2,.card-img-3 {
+    .card-img-1,
+    .card-img-2,
+    .card-img-3 {
         margin-left: 10%;
         width: 55%;
     }
@@ -944,7 +955,9 @@ input.error {
         width: 111%;
     }
 
-    .card-card-1,.card-card-2,.card-card-3 {
+    .card-card-1,
+    .card-card-2,
+    .card-card-3 {
         width: 100%;
         left: 5%;
     }
@@ -953,7 +966,8 @@ input.error {
         padding-top: 4px;
     }
 
-    .card-img-2,.card-img-3 {
+    .card-img-2,
+    .card-img-3 {
         margin-top: 10%;
 
     }
@@ -1038,7 +1052,7 @@ input.error {
         line-height: 34px;
     }
 
-    .container-fluid .card-cont{
+    .container-fluid .card-cont {
         margin-top: -10%;
     }
 
@@ -1140,6 +1154,7 @@ input.error {
         font-size: 39px;
         padding-bottom: 2%;
     }
+
     .card-img-1.col-lg-3 {
         margin-left: -21%;
     }
@@ -1148,11 +1163,14 @@ input.error {
         width: 130%;
     }
 
-    .card-img-2.col-lg-3.col-md-3,.card-img-3.col-lg-3.col-md-3 {
+    .card-img-2.col-lg-3.col-md-3,
+    .card-img-3.col-lg-3.col-md-3 {
         margin-left: 12%;
     }
 
-    .card-card-1,.card-card-2,.card-card-3 {
+    .card-card-1,
+    .card-card-2,
+    .card-card-3 {
         width: 114%;
         height: 34%;
     }
@@ -1163,7 +1181,8 @@ input.error {
         line-height: 22px;
     }
 
-    .h6,h6 {
+    .h6,
+    h6 {
         font-size: 2rem;
     }
 
@@ -1194,11 +1213,12 @@ input.error {
         width: 30%;
     }
 
-    .cpy-p1,.cpy-p2 {
+    .cpy-p1,
+    .cpy-p2 {
         font-size: 25px;
     }
 
-    .cpy-p2{
+    .cpy-p2 {
         margin-left: 34%;
     }
 }
@@ -1209,15 +1229,22 @@ input.error {
         width: 101%;
         margin-left: -7%;
     }
-    .rec-1,.rec-2,#button,.layout-4 .layout-p .layout-p-span,.rec-text-col,.rec-text-1{
+
+    .rec-1,
+    .rec-2,
+    #button,
+    .layout-4 .layout-p .layout-p-span,
+    .rec-text-col,
+    .rec-text-1 {
         display: none;
     }
+
     .quotes button {
         padding: 1px 12px;
         width: 30%;
         line-height: -1px;
     }
-    
+
     .phone-para {
         margin-left: 69px;
         font-size: 16px;
@@ -1227,6 +1254,7 @@ input.error {
         font-size: 29%;
         line-height: 270%;
     }
+
     .phone-text-col p .phone-span {
         margin-left: 70px;
     }
@@ -1234,11 +1262,13 @@ input.error {
     .layout-4 {
         height: 255px;
     }
+
     .layout-4 .lay-text {
         margin-left: 7%;
         font-size: 132%;
         margin-bottom: -4%;
     }
+
     .text-img-p {
         top: -10%;
         font-size: 9px;
