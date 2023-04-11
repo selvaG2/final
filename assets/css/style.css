@@ -383,6 +383,13 @@ td.money-span {
     font-weight: 600;
 }
 
+td:nth-child(odd) {
+    box-shadow: inset 1px 8px 20px 0px rgba(54, 52, 52, 0.2);
+}
+.table>:not(:last-child)>:last-child>* {
+    box-shadow: 1px -1px 20px 8px rgba(54, 52, 52, 0.2);
+}
+
 /* section 6 strip css */
 .text-img {
     z-index: 1;
@@ -575,17 +582,10 @@ img.card-img.position-relative {
     color: black;
 }
 
-label.error {
-    display: block;
-    color: red;
-    font-size: 11px;
-    margin-top: 5px;
+input.error {
+    box-shadow: 0px 0px 5px 1px rgba(255, 0, 0, 1);
   }
-
-  .error {
-    margin-bottom: 10px;
-  }
-  
+    
 
 /* media query for tablet view of 768 px */
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -747,14 +747,11 @@ label.error {
         width: 110%;
     }
 
-    .card-img-2.col-lg-3.col-md-3,
-    .card-img-3.col-lg-3.col-md-3 {
+    .card-img-2.col-lg-3.col-md-3,.card-img-3.col-lg-3.col-md-3 {
         margin-left: 33px;
     }
 
-    .card-card-1,
-    .card-card-2,
-    .card-card-3 {
+    .card-card-1,.card-card-2,.card-card-3 {
         font-size: 7px;
         width: 95%;
     }
@@ -766,8 +763,7 @@ label.error {
         line-height: 9px;
     }
 
-    .button p,
-    .button button {
+    .button p,.button button {
         margin-left: 30%;
         margin-right: 34%;
     }
@@ -937,9 +933,7 @@ label.error {
         max-width: 185px;
     }
 
-    .card-img-1,
-    .card-img-2,
-    .card-img-3 {
+    .card-img-1,.card-img-2,.card-img-3 {
         margin-left: 10%;
         width: 55%;
     }
@@ -948,9 +942,7 @@ label.error {
         width: 111%;
     }
 
-    .card-card-1,
-    .card-card-2,
-    .card-card-3 {
+    .card-card-1,.card-card-2,.card-card-3 {
         width: 100%;
         left: 5%;
     }
@@ -959,8 +951,7 @@ label.error {
         padding-top: 4px;
     }
 
-    .card-img-2,
-    .card-img-3 {
+    .card-img-2,.card-img-3 {
         margin-top: 10%;
 
     }

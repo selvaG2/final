@@ -1,40 +1,69 @@
-$(document).ready(function () {
-  $("#myForm").validate({
-    rules: {
-      username: {
-        required: true,
-        pattern: /^(\w){5,8}$/
-      },
-      email: {
-        required: true,
-        pattern: /^[\w]+@cgvakindia\.com$/
-      },
-      phone: {
-        required: true,
-        pattern: /^(\d){10}$/
-      },
-      comment: {
-        required: true
-      }
-    },
-    messages: {
-      username: {
-        required: "This field can't be empty",
-        pattern: "It should contain only alphabet number and underscore"
-      },
-      email: {
-        required: "This field can't be empty",
-        pattern: "It should be a CG-VAK email"
-      },
-      phone: {
-        required: "This field can't be empty",
-        pattern: "Must contain 10 numbers only"
-      },
-      comment: {
-        required: "This field can't be empty"
-      }
-    }
+document.addEventListener("DOMContentLoaded", function() {
+  var myForm = document.getElementById("myForm");
+
+  myForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+    validateForm();
   });
+
+  function validateForm() {
+    var username = document.forms["myForm"]["username"].value;
+    var email = document.forms["myForm"]["email"].value;
+    var phone = document.forms["myForm"]["phone"].value;
+    var comment = document.forms["myForm"]["comment"].value;
+
+    var usernamePattern = /^(\w){5,8}$/;
+    var emailPattern = /^[\w]+@cgvakindia\.com$/;
+    var phonePattern = /^(\d){10}$/;
+
+    if (username === "" || !usernamePattern.test(username)) {
+      highlightError("username");
+      return false;
+    }
+
+    if (email === "" || !emailPattern.test(email)) {
+      highlightError("email");
+      return false;
+    }
+
+    if (phone === "" || !phonePattern.test(phone)) {
+      highlightError("phone");
+      return false;
+    }
+
+    if (comment === "") {
+      highlightError("comment");
+      return false;
+    }
+
+    return alert("Thanks for comment");
+  }
+
+  function highlightError(fieldName) {
+    var inputElement = document.forms["myForm"][fieldName];
+    inputElement.classList.add("error");
+  }
+
+  var inputs = document.querySelectorAll("#myForm input");
+
+  for (var i = 0; i < inputs.length; i++) {
+    inputs[i].addEventListener("blur", function(event) {
+      if (event.target.value === "") {
+        event.target.classList.remove("error");
+        return;
+      }
+
+      if (event.target.name === "username" && !/^(\w){5,8}$/.test(event.target.value)) {
+        highlightError("username");
+      } else if (event.target.name === "email" && !/^[\w]+@cgvakindia\.com$/.test(event.target.value)) {
+        highlightError("email");
+      } else if (event.target.name === "phone" && !/^(\d){10}$/.test(event.target.value)) {
+        highlightError("phone");
+      } else {
+        event.target.classList.remove("error");
+      }
+    });
+  }
 });
 
 
