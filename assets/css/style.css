@@ -779,8 +779,10 @@ input.error {
 
 }
 
+
 /* media query for mobile-L */
-@media (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  
     header {
         height: 190px;
     }
@@ -970,23 +972,6 @@ input.error {
     }
 
 }
-
-@media only screen and (min-width: 1441px) {
-  /* CSS rules for screens with a width larger than 1440px */
-  
-  @media only screen and (min-width: 1035px) and (max-width: 1440px) {
-    /* CSS rules for screens with a width between 1035px and 1440px */
-    
-    header{
-        height: 469px;
-    }
-
-    .container-fluid card-cont{
-        margin-top: -10%;
-    }
-  }
-}
-
 
 /* media query for 4k desktop */
 @media only screen and (min-width: 1441px) and (max-width: 2560px) {
@@ -1219,9 +1204,43 @@ input.error {
 }
 
 /* small mobile media query */
-@media(max-width:320px){
+@media only screen and (max-width: 320px) {
     .table {
         width: 101%;
         margin-left: -7%;
+    }
+    .rec-1,.rec-2,#button,.layout-4 .layout-p .layout-p-span,.rec-text-col,.rec-text-1{
+        display: none;
+    }
+    .quotes button {
+        padding: 1px 12px;
+        width: 30%;
+        line-height: -1px;
+    }
+    
+    .phone-para {
+        margin-left: 69px;
+        font-size: 16px;
+    }
+
+    #menu {
+        font-size: 29%;
+        line-height: 270%;
+    }
+    .phone-text-col p .phone-span {
+        margin-left: 70px;
+    }
+
+    .layout-4 {
+        height: 255px;
+    }
+    .layout-4 .lay-text {
+        margin-left: 7%;
+        font-size: 132%;
+        margin-bottom: -4%;
+    }
+    .text-img-p {
+        top: -10%;
+        font-size: 9px;
     }
 }

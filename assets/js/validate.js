@@ -71,9 +71,6 @@ function deal(){
   alert("Deals will be displayed soon");
 }
 
-function response(){
-  alert("Thanks for the comment");
-}
 
 function report(){
   alert("Reports are on the way");
